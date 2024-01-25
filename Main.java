@@ -8,5 +8,6 @@ public class Main {
         GamblerService gs =new GamblerService();
         gs.limits(g1);
         gs.game(g1);
+        System.out.println(g1.getStack());
     }
 }
