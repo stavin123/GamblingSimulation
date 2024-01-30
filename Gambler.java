@@ -1,10 +1,30 @@
 package Gamblingsimulator;
 
 public class Gambler {
-    int Stack;
-    int HightLimit;
-    int LowLimit;
+    private  int Stack;
+    private int HightLimit;
+    private int LowLimit;
     int bet;
+    int Wins;
+    int Losses;
+    int NumberOfGames;
+    int winpercentage=0,losspercentage=0;
+
+    public int getWinpercentage() {
+        return winpercentage;
+    }
+
+    public void setWinpercentage(int winpercentage) {
+        this.winpercentage = winpercentage;
+    }
+
+    public int getLosspercentage() {
+        return losspercentage;
+    }
+
+    public void setLosspercentage(int losspercentage) {
+        this.losspercentage = losspercentage;
+    }
 
     public int getHightLimit() {
         return HightLimit;
@@ -36,5 +56,29 @@ public class Gambler {
 
     public void setStack(int stack) {
         Stack = stack;
+    }
+
+    public int getWins() {
+        return Wins;
+    }
+
+    public void setWins(int wins) {
+        Wins = wins;
+    }
+
+    public int getLosses() {
+        return Losses;
+    }
+
+    public void setLosses(int losses) {
+        Losses = losses;
+    }
+
+    public int getNumberOfGames() {
+        return NumberOfGames;
+    }
+
+    public void setNumberOfGames(int numberOfGames) {
+        NumberOfGames = numberOfGames;
     }
 }
