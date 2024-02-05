@@ -9,6 +9,15 @@ public class Gambler {
     int Losses;
     int NumberOfGames;
     int winpercentage=0,losspercentage=0;
+    String WinLoss;
+
+    public String getWinLoss() {
+        return WinLoss;
+    }
+
+    public void setWinLoss(String winLoss) {
+        WinLoss = winLoss;
+    }
 
     public int getWinpercentage() {
         return winpercentage;

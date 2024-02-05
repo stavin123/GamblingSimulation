@@ -28,11 +28,13 @@ public class GamblerService {
             System.out.println("bet lost");
             g.setStack(g.getStack()-1);
             g.setLosses(g.getLosses()+1);
+            g.setWinLoss("Loss");
         }
         else {
             System.out.println("bet won");
             g.setStack(g.getStack()+1);
             g.setWins(g.getWins()+1);
+            g.setWinLoss("Won");
         }
     }
     public  void resign(Gambler g){
