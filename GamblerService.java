@@ -46,4 +46,20 @@ public class GamblerService {
         System.out.println("Lower limit for the day ="+g.getLosspercentage());
     }
 
+
+    public void count(Gambler g){
+        int a=g.getNumberOfGames();
+        for (int i = 0; i < a; i++) {
+            String s=g.getWinLoss();
+            if (s.equalsIgnoreCase("Won")) {
+                g.setWc(g.getWc()+1);
+
+            }
+            else {
+                g.setLc(g.getLc()+1);
+            }
+        }
+    }
+
+
 }

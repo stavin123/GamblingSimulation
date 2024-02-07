@@ -10,6 +10,23 @@ public class Gambler {
     int NumberOfGames;
     int winpercentage=0,losspercentage=0;
     String WinLoss;
+    int wc=0,lc=0;
+
+    public int getWc() {
+        return wc;
+    }
+
+    public void setWc(int wc) {
+        this.wc = wc;
+    }
+
+    public int getLc() {
+        return lc;
+    }
+
+    public void setLc(int lc) {
+        this.lc = lc;
+    }
 
     public String getWinLoss() {
         return WinLoss;
