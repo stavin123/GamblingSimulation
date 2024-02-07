@@ -1,7 +1,20 @@
 package Gamblingsimulator;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
+        List<GamblerList> arr=new ArrayList<>(20);
+        Main m=new Main();
+
+        for (int i = 0; i < 20; i++) {
+            arr.add(m.Day());
+
+        }
+    }
+
+    GamblerList Day(){
         Gambler g1=new Gambler();
         g1.setStack(100);
         System.out.println("stack given for each gambler="+g1.getStack());
@@ -20,10 +33,12 @@ public class Main {
                 break;
 
         }
-
+        
 
         gl.showlist(g1);
         System.out.println("Stack at the end of the Day = "+g1.getStack());
 
+
+        return gl;
     }
 }

@@ -5,18 +5,18 @@ import java.util.List;
 
 public class GamblerList {
 
-    List<String> al=new ArrayList<>();
+    List<Gambler> al=new ArrayList<>();
 
     void setArray(Gambler g){
-        List<String> al=new ArrayList<>(g.getNumberOfGames());
+        List<Gambler> al=new ArrayList<>(g.getNumberOfGames());
     }
 
     void addValue(Gambler g,int i){
-        al.add(i,g.getWinLoss());
+        al.add(i,g);
     }
     void showlist(Gambler g){
         System.out.println("Wins and Losses at the end of the Day");
-        for(String i : al){
+        for(Gambler i : al){
             System.out.println(i);
         }
     }
